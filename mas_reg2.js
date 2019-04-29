@@ -20,4 +20,15 @@
 
 
 */
+window.addEventListener("load", writeSessionValues);
 
+function writeSessionValues() {
+      document.getElementById("regName").textContent = sessionStorage.getItem("confName");
+      document.getElementById("regGroup").textContent = sessionStorage.getItem("confGroup");
+      document.getElementById("regEmail").textContent = sessionStorage.getItem("confMail");
+      document.getElementById("regPhone").textContent = sessionStorage.getItem("confPhone");
+      document.getElementById("regSession").textContent = sessionStorage.getItem("confSession");
+      document.getElementById("regBanquet").textContent = sessionStorage.getItem("confBanquet");
+      document.getElementById("regPack").textContent = sessionStorage.getItem("confPack");
+      document.getElementById("regTotal").textContent = "$" + sessionStorage.getItem("confTotal");
+}
